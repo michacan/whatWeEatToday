@@ -114,3 +114,12 @@ function buildHtmlTable(ordersTable) {
         }
     }
 }
+
+$(document).ready(function () {
+    var email = 'Michael.Canayev@philips.com';
+    var subject = 'Improvements suggestions for Where We Eat Today';
+    var emailBody = 'Here are some improvements that can be done:';
+    var link = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+
+    $("#suggestImprovement").attr("href", link);
+});
